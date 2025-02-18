@@ -23,6 +23,7 @@ namespace TicketAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Ticket>>> GetTickets()
         {
+            //return all tickets
             return await _context.Tickets.ToListAsync();
         }
 
@@ -36,7 +37,7 @@ namespace TicketAPI.Controllers
             return Ok(ticket);
         }
 
-        // POST: api/ticket
+        // POST: api/ticket post apis for creating ticket
         [HttpPost]
         public async Task<ActionResult<Ticket>> CreateTicket([FromBody] Ticket newTicket)
         {
