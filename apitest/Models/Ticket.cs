@@ -3,13 +3,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TicketAPI.Models
 {
+    // Ticket model which have all fields of ticket
     public class Ticket
     {
         [Key]
-        public int Id { get; set; }
+        public int Id { get; set; }   // primary key
 
         [Required]
-        public string TicketNo { get; set; }
+        public string TicketNo { get; set; }  // ticket number
 
         [Required]
         public string Subject { get; set; }
