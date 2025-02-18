@@ -20,6 +20,7 @@ namespace TicketAPI.Controllers
         }
 
         // GET: api/ticket get api
+        //api testing
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Ticket>>> GetTickets()
         {
